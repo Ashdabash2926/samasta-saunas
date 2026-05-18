@@ -67,7 +67,11 @@ Shared sticky nav + footer. Nav: wordmark left, Home / The Sauna / About / Enqui
 
 ## Photos
 
-Dan's photos not yet supplied. Use Unsplash placeholders matching mood. Tag every `<img>` with `data-placeholder="true"` for easy swap later. Dan-portrait slot on About is also a placeholder.
+Currently using **Unsplash stock photos as temporary placeholders** until Dan's photo stack arrives. Each photo slot is a `<div class="photo photo--has-image ...">` with an inline `background-image: url(...)` and an inner `<div class="photo__tint"></div>` that applies the warm duotone wash.
+
+To swap to Dan's real photos: change the inline `background-image` URL on each photo div. The arch crops, grain, and tint stay in place automatically. Or convert to `<img>` elements (will need a small CSS adjustment for `object-fit: cover`).
+
+Dan-portrait stand-in on About is a man-working-with-wood Unsplash shot — placeholder for the real photo from Sammie of Dan outside the sauna he built for Mandy.
 
 ## Tech
 
