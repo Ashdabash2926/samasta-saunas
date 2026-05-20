@@ -11,12 +11,22 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 24' fill='none' stroke='%238a5a3a' stroke-width='2'><path d='M2 22 Q2 2 20 2 Q38 2 38 22'/><path d='M9 22 Q9 9 20 9 Q31 9 31 22'/><path d='M16 22 Q16 16 20 16 Q24 16 24 22'/></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,30..100;1,9..144,300..600,30..100&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" as="image"
+          href="https://images.unsplash.com/photo-1583416750470-965b2707b355?w=1800&auto=format&fit=crop&q=80"
+          imagesrcset="https://images.unsplash.com/photo-1583416750470-965b2707b355?w=900&auto=format&fit=crop&q=70 900w, https://images.unsplash.com/photo-1583416750470-965b2707b355?w=1400&auto=format&fit=crop&q=75 1400w, https://images.unsplash.com/photo-1583416750470-965b2707b355?w=1800&auto=format&fit=crop&q=80 1800w"
+          imagesizes="100vw"
+          fetchpriority="high">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1583416750470-965b2707b355?w=1200&h=630&auto=format&fit=crop&crop=entropy&q=80">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="nav on-dark" role="banner">
+<header class="nav" role="banner">
     <div class="nav__inner">
         <a class="brand" href="index.html" aria-label="Samasta Saunas home">
             <svg class="brand__mark" viewBox="0 0 40 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -40,68 +50,41 @@
 
 <!-- ── Hero ────────────────────────────────────────────── -->
 <section class="hero" aria-label="Introduction">
-    <svg class="hero__arc" viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-width="0.8" aria-hidden="true">
-        <path d="M40 400 A 40 40 0 0 0 0 360"/>
-        <path d="M80 400 A 80 80 0 0 0 0 320"/>
-        <path d="M120 400 A 120 120 0 0 0 0 280"/>
-        <path d="M160 400 A 160 160 0 0 0 0 240"/>
-        <path d="M200 400 A 200 200 0 0 0 0 200"/>
-        <path d="M240 400 A 240 240 0 0 0 0 160"/>
-        <path d="M280 400 A 280 280 0 0 0 0 120"/>
-        <path d="M320 400 A 320 320 0 0 0 0 80"/>
-        <path d="M360 400 A 360 360 0 0 0 0 40"/>
-    </svg>
-
-    <div class="hero__grid">
-        <div class="hero__text">
-            <span class="eyebrow reveal">Samasta — Yorkshire · Est. by hand</span>
-            <h1 class="display-xl reveal" data-delay="1">
-                Real wood.<br>
-                Live edges.<br>
-                <span class="italic">Built by hand.</span>
-            </h1>
-            <p class="reveal" data-delay="2">
-                Bespoke wood-burning saunas, made one at a time at our farm in Leeds, then rebuilt at your home over two unhurried days.
-            </p>
-            <a class="btn btn--light reveal" data-delay="3" href="enquire.html">
-                <span>Plan your sauna</span>
-                <svg class="arrow" viewBox="0 0 16 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 5h14m-4-4 4 4-4 4"/></svg>
-            </a>
-        </div>
-
-        <div class="hero__photo reveal" data-delay="2">
-            <div class="photo photo--arch photo--has-image photo--with-arcs"
+    <div class="hero__sticky">
+        <div class="hero__frame">
+            <div class="hero__image"
                  role="img"
-                 aria-label="Wood-burning sauna at dusk with warm firelight glowing from the doorway"
-                 style="background-image: url('https://images.unsplash.com/photo-1605357625516-575fec3e086b?w=1400&auto=format&fit=crop&q=80');"><div class="photo__tint"></div></div>
-            <div class="hero__photo__caption">
-                <span>No. 001</span>
-                <span>Leeds · Yorkshire</span>
+                 aria-label="Wood-lined sauna interior, dim and warm, with cedar benches and a heater of stones in the centre"
+                 style="background-image: url('https://images.unsplash.com/photo-1583416750470-965b2707b355?w=1800&auto=format&fit=crop&q=80');"></div>
+            <div class="hero__overlay" aria-hidden="true"></div>
+            <div class="hero__copy">
+                <h1 class="hero__intro">
+                    Real wood, live edges, and the quiet work of one joiner's hands &mdash; bespoke wood-burning saunas, made one at a time at our farm in Leeds, then rebuilt at your home over two unhurried days.
+                </h1>
             </div>
         </div>
-    </div>
-
-    <div class="hero__scroll" aria-hidden="true">
-        <span>Begin</span>
+        <div class="hero__scroll" aria-hidden="true">
+            <span>Scroll</span>
+        </div>
     </div>
 </section>
 
 <!-- ── Ethos manifesto ─────────────────────────────────── -->
 <section class="ethos" aria-label="Ethos">
     <svg class="ethos__arc" viewBox="0 0 400 200" fill="none" stroke="currentColor" stroke-width="0.6" aria-hidden="true" preserveAspectRatio="xMidYMax meet">
-        <path d="M40 200 A 160 160 0 0 1 360 200"/>
-        <path d="M70 200 A 130 130 0 0 1 330 200"/>
-        <path d="M100 200 A 100 100 0 0 1 300 200"/>
-        <path d="M130 200 A 70 70 0 0 1 270 200"/>
-        <path d="M160 200 A 40 40 0 0 1 240 200"/>
+        <path style="--i:0" pathLength="1" d="M40 200 A 160 160 0 0 1 360 200"/>
+        <path style="--i:1" pathLength="1" d="M70 200 A 130 130 0 0 1 330 200"/>
+        <path style="--i:2" pathLength="1" d="M100 200 A 100 100 0 0 1 300 200"/>
+        <path style="--i:3" pathLength="1" d="M130 200 A 70 70 0 0 1 270 200"/>
+        <path style="--i:4" pathLength="1" d="M160 200 A 40 40 0 0 1 240 200"/>
     </svg>
     <div class="ethos__inner">
-        <span class="eyebrow reveal">— Ethos</span>
-        <p class="ethos__lead reveal" data-delay="1">
-            Real wood.<span class="sep">·</span>Live edges.<span class="sep">·</span><span>Soul.</span><span class="sep">·</span>Warmth.<span class="sep">·</span><span>Heart.</span>
+        <span class="eyebrow ethos__eyebrow">— Ethos</span>
+        <p class="ethos__lead">
+            <span class="ethos__word" style="--i:0">Real wood.</span><span class="ethos__sep" style="--i:1">·</span><span class="ethos__word" style="--i:2">Live edges.</span><span class="ethos__sep" style="--i:3">·</span><span class="ethos__word ethos__word--accent" style="--i:4">Soul.</span><span class="ethos__sep" style="--i:5">·</span><span class="ethos__word" style="--i:6">Warmth.</span><span class="ethos__sep" style="--i:7">·</span><span class="ethos__word ethos__word--accent" style="--i:8">Heart.</span>
         </p>
-        <p class="ethos__lead reveal" data-delay="2" style="margin-top: 1.5rem;">
-            <span class="italic" style="font-size: 0.7em; color: rgba(28,36,32,0.55);">— made by a joiner, by his hands, not a factory.</span>
+        <p class="ethos__lead ethos__lead--final">
+            <span class="ethos__line" data-text="— made by a joiner, by his hands, not a factory.">— made by a joiner, by his hands, not a factory.</span>
         </p>
     </div>
 </section>
